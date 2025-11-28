@@ -4,36 +4,76 @@ import os
 st.set_page_config(page_title="Hoofdmenu", page_icon="📚")
 
 # ======================
-# LOGO BOVENAAN
+# LOGO
 # ======================
 logo_path = "logo.png"
 if os.path.exists(logo_path):
-    st.image(logo_path, width=400)  # pas breedte aan indien gewenst
+    st.image(logo_path, width=400)
 else:
     st.warning(f"Logo '{logo_path}' niet gevonden.")
 
-# ======================
-# TITEL
-# ======================
 st.title("📚 Centrale Streamlit Hub")
-st.write("Kies een toepassing uit het menu links:")
+st.write("Kies links een toepassing en lees rechts wat deze precies doet.")
 
 # ======================
-# MENU STRUCTUUR
+# MENU DATA
 # ======================
-st.sidebar.title("Menu")
+APPS = {
+    "Dashboard leerlingen": {
+        "url": "https://h5p-memory-generator-jyxcvbcxcag7cmbzoxqqym.streamlit.app/",
+        "beschrijving": """
+Dit dashboard toont een overzicht van de leerlingen.
 
-apps = {
-    "Dashboard leerlingen": "https://mijn-app-1.streamlit.app",
-    "Sensor data": "https://mijn-app-2.streamlit.app",
-    "AI demo": "https://mijn-app-3.streamlit.app",
+Je kan hier:
+- prestaties opvolgen  
+- aanwezigheid bekijken  
+- trends analyseren doorheen de tijd  
+
+Ideaal voor leerkrachten om snel inzicht te krijgen in de klaswerking.
+"""
+    },
+    "Sensor data": {
+        "url": "https://mijn-app-2.streamlit.app",
+        "beschrijving": """
+Deze toepassing toont live sensorgegevens van IoT-toestellen.
+
+Functies:
+- real-time temperatuur- en vochtigheidsmetingen  
+- grafieken per dag/week  
+- waarschuwingen bij grenswaarden  
+
+Geschikt voor demo's rond IoT en datavisualisatie.
+"""
+    },
+    "AI demo": {
+        "url": "https://mijn-app-3.streamlit.app",
+        "beschrijving": """
+Interactieve AI demonstratie voor cursisten.
+
+Hier kunnen gebruikers:
+- AI-prompts uittesten  
+- beeldgeneratie proberen  
+- voorbeelden bekijken van AI in de praktijk  
+
+Ideaal voor bewustmaking en praktijkoefeningen.
+"""
+    }
 }
 
-keuze = st.sidebar.radio("Kies een toepassing:", list(apps.keys()))
+# ======================
+# SIDEBAR MENU
+# ======================
+st.sidebar.title("Menu")
+keuze = st.sidebar.radio("Kies een toepassing:", APPS.keys())
 
-st.write(f"### Gekozen: {keuze}")
+gekozen_app = APPS[keuze]
 
-url = apps[keuze]
+# ======================
+# RECHTERKANT: UITLEG
+# ======================
+st.subheader(f"ℹ️ Over: {keuze}")
+st.write(gekozen_app["beschrijving"])
 
-st.write("Klik hieronder om naar de app te gaan:")
-st.link_button("Open deze app", url)
+st.divider()
+
+st.link_button("🚀 Open deze toepassing", gekozen_app["url"])
