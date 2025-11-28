@@ -12,24 +12,25 @@ if os.path.exists(logo_path):
 else:
     st.warning(f"Logo '{logo_path}' niet gevonden.")
 
-st.title("📚 Centrale Streamlit Hub")
+st.title("📚 Centrale H5P Hub")
 st.write("Kies links een toepassing en lees rechts wat deze precies doet.")
 
 # ======================
 # MENU DATA
 # ======================
 APPS = {
-    "Dashboard leerlingen": {
+    "Memory": {
         "url": "https://h5p-memory-generator-jyxcvbcxcag7cmbzoxqqym.streamlit.app/",
         "beschrijving": """
-Dit dashboard toont een overzicht van de leerlingen.
+Deze maakt een H5P memory spel op basis van woorden. Dus steeds 2 bij elkaar horende woorden.
+denk heirbij aan vb slot ; sleutel maar kan evengoed hond ; dog zijn.
 
-Je kan hier:
-- prestaties opvolgen  
-- aanwezigheid bekijken  
-- trends analyseren doorheen de tijd  
+Je geeft zelf volgende info:
+- per lijn 2 woorden die bij elkaar horen
+- De twee woorden moeten gescheiden zijn door een puntkomma (;)
+- bij voorkeur niet meer dan 10 woordparen (bij meer past het sepl neit meer op eht scherm)  
 
-Ideaal voor leerkrachten om snel inzicht te krijgen in de klaswerking.
+Ideaal om snel een memory te maken.
 """
     },
     "Sensor data": {
