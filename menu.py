@@ -13,7 +13,7 @@ else:
     st.warning(f"Logo '{logo_path}' niet gevonden.")
 
 st.title("📚 Centrale H5P Hub")
-st.write("Kies links een toepassing en lees rechts wat deze precies doet.")
+st.write("Kies links een toepassing en lees hieronder wat deze precies doet.")
 
 # ======================
 # MENU DATA
@@ -33,30 +33,30 @@ Je geeft zelf volgende info:
 Ideaal om snel een memory te maken.
 """
     },
-    "Sensor data": {
+    "AI- Youtube": {
         "url": "https://mijn-app-2.streamlit.app",
         "beschrijving": """
-Deze toepassing toont live sensorgegevens van IoT-toestellen.
+Deze tool genereert meerkeuzevragen (MC) op basis van de inhoud/transcriptie van een YouTube-video.
 
 Functies:
-- real-time temperatuur- en vochtigheidsmetingen  
-- grafieken per dag/week  
-- waarschuwingen bij grenswaarden  
+- Plak zelf de verwijzing naar de video  
+- Geef aan heoveel vragen je wenst
+- Bekijk de antwoorden 
 
-Geschikt voor demo's rond IoT en datavisualisatie.
+Geschikt snel een video te ondervragen.
 """
     },
-    "AI demo": {
-        "url": "https://mijn-app-3.streamlit.app",
+    "AI MC": {
+        "url": "https://https://h5p-generator-vpwisursrpmktprxkzuqdk.streamlit.app/",
         "beschrijving": """
-Interactieve AI demonstratie voor cursisten.
+MC op prompt basis
 
 Hier kunnen gebruikers:
-- AI-prompts uittesten  
-- beeldgeneratie proberen  
-- voorbeelden bekijken van AI in de praktijk  
+- Eén vraag per prompt: De tool maakt slechts één MC-vraag per keer. 
+- Het antwoorde bekijken en eventueel de prompt herschrijven
+- Single-Select/Single-Answer: De vraag heeft slechts één correct antwoord
 
-Ideaal voor bewustmaking en praktijkoefeningen.
+Ideaal voor snel over een onderwerp een eenvoduige MC te maken.
 """
     }
 }
