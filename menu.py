@@ -47,7 +47,7 @@ Geschikt snel een video te ondervragen.
 """
     },
     "AI MC": {
-        "url": "https://https://h5p-generator-vpwisursrpmktprxkzuqdk.streamlit.app/",
+        "url": "https://h5p-generator-vpwisursrpmktprxkzuqdk.streamlit.app/",
         "beschrijving": """
 MC op prompt basis
 
