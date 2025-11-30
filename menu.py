@@ -46,7 +46,9 @@ Functies:
 - Kopieer de uitvoer van de Chat en plak het in de applicatie
 
 Geschikt om snel een video te laten analyseren en er meerkeuzevragen uit te genereren.
-**Meer uitleg:** [https://youtu.be/_2cOoyc_kTY]
+**Meer uitleg van Youtube naar MC:** [https://youtu.be/_2cOoyc_kTY]
+**Meer uitleg van tekst naar MC:** [https://youtu.be/PvH9lBNVgPs]
+
 """
     },
     "AI MC": {
