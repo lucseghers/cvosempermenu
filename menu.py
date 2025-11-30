@@ -34,14 +34,16 @@ Ideaal om snel een memory te maken.
 """
     },
     "AI- Youtube": {
-        "url": "https://mijn-app-2.streamlit.app",
+        "url": "https://quiz-from-user-text-jmmnrlnnnehbsrkfjhrjrm.streamlit.app/",
         "beschrijving": """
 Deze tool genereert meerkeuzevragen (MC) op basis van de inhoud/transcriptie van een YouTube-video.
 
 Functies:
-- Plak zelf de verwijzing naar de video  
+- Gebruik eerst de voorbeeldprompt in ChatGPT of Gemnini
+- Voeg achteraan de link naar de video toe  
 - Geef aan heoveel vragen je wenst
 - Bekijk de antwoorden 
+- Kopieer de uitvoer van de Chat en plak het in de applicatie
 
 Geschikt snel een video te ondervragen.
 """
