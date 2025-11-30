@@ -41,11 +41,11 @@ Deze tool genereert meerkeuzevragen (MC) op basis van de inhoud/transcriptie van
 Functies:
 - Gebruik eerst de voorbeeldprompt in ChatGPT of Gemnini
 - Voeg achteraan de link naar de video toe  
-- Geef aan heoveel vragen je wenst
+- Geef aan hoeveel vragen je wenst
 - Bekijk de antwoorden 
 - Kopieer de uitvoer van de Chat en plak het in de applicatie
 
-Geschikt snel een video te ondervragen.
+Geschikt om snel een video te laten analyseren en er meerkeuzevragen uit te genereren.
 """
     },
     "AI MC": {
